@@ -81,12 +81,12 @@ In order to complete the 3d printing part we used just over 4 kg of plastic, and
 ### Motors
 We mainly used stepper motors for all the movements except for the end effector where we used a servo motor. 
 In particular, we assembled:
-• 1 Nema 14 for the first joint
-• 2 Nema 23 for the second joint
-• 1 Nema 17 with an internal reduction of 1:5 for the third joint
-• 1 Nema 17 for the fourth joint
-• 1 Nema 17 for the fifth joint
-• 1 Servo of 20 kg for the gripper
+#### • 1 Nema 14 for the first joint
+#### • 2 Nema 23 for the second joint
+#### • 1 Nema 17 with an internal reduction of 1:5 for the third joint
+#### • 1 Nema 17 for the fourth joint
+#### • 1 Nema 17 for the fifth joint
+#### • 1 Servo of 20 kg for the gripper
 
 ### Drivers
 Each motor is controlled in power by a (tb6560) driver.
@@ -100,7 +100,10 @@ All the drivers require 24 volts, so they are all connected in parallel to the o
 The servo, instead, needs about 6 volts, and it is connected to a smaller power supply.
 The boards have a separate circuit, just to be sure to not supercharge them.
 
-<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e">
+<div align="center">
+  <img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e">
+</div>
+
 
 -------------------------------------
 
@@ -126,7 +129,9 @@ In this architecture, each of the 5DOF stepper motors is controlled by a dedicat
 Additionally, to keep the project cost-effective, we opted for a simpler control system without encoders.
 The implementation of encoders in the future could enhance the control system’s precision by providing real-time feedback on the actual joint positions, potentially enabling closed-loop control for improved accuracy.
 
-<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/685748a0-2555-464a-b329-d6948ca6eea8">
+<div align="center">
+  <img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/685748a0-2555-464a-b329-d6948ca6eea8">
+</div>
 
 
 ## Kinematics
@@ -134,17 +139,17 @@ During the course, we studied direct and inverse kinematics to analyze all the m
 In robotics, kinematics is the branch of study concerned with the relationship between the geometry of a robot’s structure (links and joints) and the motion of its end effector (the gripper or tool at the tip) doesn’t considering the forces or torques that cause the motion.
 
 The performance of the robot can be analyzed looking at:
-• Workspace volume:
+#### • Workspace volume:
 the reachable volume where the robot’s end-effector can operate.
 In our case, having a workspace close to a truncated cone, we have a volume of about 0.19 m3.
-• Accuracy:
+#### • Accuracy:
 that is how closely a robot’s actions match the intended outcome. 
 We estimated an error between 1 mm and 3 mm.
-• Repeatability:
+#### • Repeatability:
 is how consistently a robot performs the same action over multiple attempts. In our case, is between 0.5 and 1 mm.
  
 
-### •	Forward Kinematics
+## •	Forward Kinematics
 This problem involves calculating the position and orientation of the end effector given the joint angles (inputs) of the robot.
 
 Where is and how is our end effector oriented?
@@ -154,10 +159,10 @@ We schematized the manipulator in an open chain with 5 revolute joints, 6 links,
 Then we performed the Denavit-Hardenberg analysis to place the frames and have a kinematics model of the robot.
 
 We studied Forward Kinematics on MATLAB, using:
-•	RVC-Toolbox with functions:
-o	ETS3 to compute the homogeneous transformation matrix
-o	fkine to compute the forward kinematics
-o	others 
+### •	RVC-Toolbox with functions:
+#### o	ETS3 to compute the homogeneous transformation matrix
+#### o	fkine to compute the forward kinematics
+#### o	others 
 to schematise the robot in a simulated environment.
 
 
@@ -179,7 +184,9 @@ This is a specific file that describes all the properties of the robot regarding
 In particular, it contains information such as mass, origin, geometry, material, inertia, limits, and collisions.
 It is essential to handle the robot in the virtual environments to compute planning trajectory.
 
-<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a5b70806-c542-4ff2-ba2a-f22638d0c6ce">
+<div align="center">
+  <img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a5b70806-c542-4ff2-ba2a-f22638d0c6ce">
+</div>
 
 
 ### Simscape Multibody Link
@@ -188,13 +195,18 @@ This is another useful file that allowed us to create the model on MATLAB/Simuli
 
 Setting the parameters as limits, velocities, and accelerations we could simulate our model checking that everything worked also in simulink.
 
-<img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6">
+<div align="center">
+  <img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6">
+</div>
 
 
 ### ROS
 Working with ROS, we had to create a sort of network to manage to communicate and exchange data. We created a package with a subscriber that takes our input data, such as angle positions or points in the workspace, and a publisher that sends them to another node that runs the script for the robot.
 
-![ROS](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b86069da-b7ac-4341-9d24-2145e0a2b2d6)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b86069da-b7ac-4341-9d24-2145e0a2b2d6" />
+</div>
+
 
 
 ### Scripts
@@ -205,8 +217,9 @@ It took into account the transmission ratio and excitation ratio.
 In our case, the transmission ratio goes from 1 to 6.5, while the excitation ratio is either 4 or 8 or 32. 
 The constant 1.8 is characteristic of the stepper motor, and it is essentially the angular distance the motor moves in a single step.
 
-![completeCode](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/1c9b92eb-944d-4fa4-807d-f464ba73dcc9)
-
+<div align="center">
+  <img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/1c9b92eb-944d-4fa4-807d-f464ba73dcc9"/>
+</div>
 
 ### MoveIt
 Then with the URDF file, we could finally implement the model on MoveIt, a special tool that allows to plan trajectories and Inverse Kinematics with different types of solvers.
@@ -215,11 +228,11 @@ We set the environment by putting the robot in its “zero position”, then we 
 For all the computations, we used an already existing library of MoveIt called OMPL - RRT planning library.
 
 This is one of the planning algorithms in MoveIt, in particular:
-• OMPL (Open Motion Planning Library):
+### • OMPL (Open Motion Planning Library):
 this is a free and open-source software library that provides a collection of algorithms for solving motion planning problems.
 
 It doesn’t deal with specific robot kinematics or dynamics but focuses on the core task of finding a collision-free path for a robot to move from a starting configuration (pose) to a goal configuration while avoiding obstacles in the environment.
-• RRT (Rapidly-exploring Random Tree):
+### • RRT (Rapidly-exploring Random Tree):
 RRT is a sampling-based motion planning algorithm.
 It iteratively builds a tree-like structure in the robot’s configuration space (all possible poses the robot can take).
 
@@ -300,7 +313,9 @@ The last upgrade we tough is to combine this project with another project we are
 Electromyography, in fact, is exactly the technique for evaluating and recording the electrical activity produced by skeletal muscles, we use it to read signals from the muscles and process them to perform predefined tasks.
 It could be very interesting to try to combine these two projects to achieve a remote control of the robot arm using electrodes placed on a human body.
 
-<img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/361bf8ad-98e1-4fd1-b121-80568bf2eba0">
+<div align="center">
+  <img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/361bf8ad-98e1-4fd1-b121-80568bf2eba0">
+</div>
 
 
 -----------------------------------------
