@@ -91,6 +91,10 @@ We designed different control algorithms.
 
 We first based the control system on an Arduino MEGA 2560, such that allows us to control all the motors manually using 3 joysticks with 2 axes each.
 
+
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d903b7e4-c2bc-40c0-92e4-ec4dd431185a
+
+
 The Arduino Mega, however, has some limitations.
 It is a single-task microcontroller, and it has one core so, it can only execute one instruction at a time.
 
