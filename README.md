@@ -59,6 +59,8 @@ https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a
 The robot has been totally 3D printed and built at home.
 In order to complete the 3d printing part we used just over 4 kg of plastic, and it took about 250 hours overall. (including problems and faulty print that needed to be printed again)
 
+<img width="1440" alt="print" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/5b0815d6-134c-44f5-bfb3-7041eb927fa1">
+
 
 ### Motors
 We mainly used stepper motors for all the movements except for the end effector where we used a servo motor. 
