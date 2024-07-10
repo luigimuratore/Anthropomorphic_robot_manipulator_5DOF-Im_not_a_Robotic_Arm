@@ -229,6 +229,12 @@ As we can see in the video, we could not do a single transition movement from th
 
 Other than that, the Inverse Kinematic solution was correct, and all the positions were reached successfully.
 
+
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/357e5dae-3826-43bf-a5b1-750ac5aa274b
+
+
+
+
 -------------------------------------------------
 
 ## Future upgrades
