@@ -5,10 +5,10 @@
 
 ### Prof.: 	Alessandro Rizzo
 ### TAs: 		David Pangcheng Cen Cheng
-        Andrea Usai
+###                     Andrea Usai
 
 
-# I’m not a Robotic Arm
+
 
 #### Muratore Luigi			s333098
 #### Gennero Giorgia		s333099 
