@@ -1,7 +1,7 @@
-POLITECNICO DI TORINO
-Master Degree in Mechatronic Engineer
+# POLITECNICO DI TORINO
+### Master Degree in Mechatronic Engineer
 
-Robotics
+## Robotics
 
 Prof.: 	Alessandro Rizzo
 TAs: 		David Pangcheng Cen Cheng
