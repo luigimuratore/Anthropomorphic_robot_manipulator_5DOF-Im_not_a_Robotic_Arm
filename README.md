@@ -88,7 +88,7 @@ All the drivers require 24 volts, so they are all connected in parallel to the o
 The servo, instead, needs about 6 volts, and it is connected to a smaller power supply.
 The boards have a separate circuit, just to be sure to not supercharge them.
 
-<img width="500" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e">
+<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e">
 
 -------------------------------------
 
@@ -114,7 +114,8 @@ In this architecture, each of the 5DOF stepper motors is controlled by a dedicat
 Additionally, to keep the project cost-effective, we opted for a simpler control system without encoders.
 The implementation of encoders in the future could enhance the control system’s precision by providing real-time feedback on the actual joint positions, potentially enabling closed-loop control for improved accuracy.
 
-![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/685748a0-2555-464a-b329-d6948ca6eea8)
+<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/685748a0-2555-464a-b329-d6948ca6eea8">
+
 
 ## Kinematics
 During the course, we studied direct and inverse kinematics to analyze all the main motion aspects of a robot.
@@ -147,6 +148,7 @@ o	fkine to compute the forward kinematics
 o	others 
 to schematise the robot in a simulated environment.
 
+<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d33fc6ba-cdf6-4e45-b6f7-b525e0e66aaa">
 
 https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d33fc6ba-cdf6-4e45-b6f7-b525e0e66aaa
 
