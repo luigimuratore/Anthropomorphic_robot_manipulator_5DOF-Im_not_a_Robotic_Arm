@@ -88,7 +88,7 @@ All the drivers require 24 volts, so they are all connected in parallel to the o
 The servo, instead, needs about 6 volts, and it is connected to a smaller power supply.
 The boards have a separate circuit, just to be sure to not supercharge them.
 
-![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e)
+<img width="500" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e">
 
 -------------------------------------
 
