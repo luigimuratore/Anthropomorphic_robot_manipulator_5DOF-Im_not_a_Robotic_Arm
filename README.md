@@ -213,7 +213,7 @@ All the other motors attained the position with an error of less than 1 mm.)
 
 In the end the robot reached the correct position to move the cube and, playing with Python code, we were able to move the whole system very smoothly.
 
-
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/16b4ba27-fd71-4346-87d7-b9f26c1f5906
 
 ### I’m not a Robotic arm
 I’m not a Robotic arm was more like an entertaining challenge than a learning experience because it needed technical movements that produced errors in the Inverse Kinematic solver since we had one degree of freedom less than the solver required.
