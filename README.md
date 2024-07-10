@@ -121,7 +121,7 @@ We estimated an error between 1 mm and 3 mm.
 is how consistently a robot performs the same action over multiple attempts. In our case, is between 0.5 and 1 mm.
  
 
-#### •	Forward Kinematics
+### •	Forward Kinematics
 This problem involves calculating the position and orientation of the end effector given the joint angles (inputs) of the robot.
 
 Where is and how is our end effector oriented?
@@ -138,11 +138,16 @@ o	others
 to schematise the robot in a simulated environment.
 
 
-#### •	Inverse Kinematics
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d33fc6ba-cdf6-4e45-b6f7-b525e0e66aaa
+
+
+### •	Inverse Kinematics
 here we need to solve another problem: how could achieve a desired position and orientation for the end effector function of the joint variables??
 For this reason, we solved the inverse kinematics problem, we used the numerical solution in MATLAB instead of the analytical one due to the fact our wrist was not spherical.
 In these videos, we obtained with the inverseKinematic function the joint variables results to reach a desired pose.
 Then we checked the results inserting the obtained values in the q-variables of the simulated environment and we observed that we did not attain the same result but the best approximation solution.
+
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a908d335-726f-4b8c-948e-b110806daab9
 
 
 ### URDF
@@ -203,8 +208,8 @@ https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a
 
 -----------------------------------------------------
 
-## Tests
-### Pick and Place
+# Tests
+## Pick and Place
 The goal of this first test was to use the robot for Pick and Place operations.
 Specifically, we put a cube in the workspace and we computed the trajectories to move it to a second position.
 
@@ -215,7 +220,7 @@ In the end the robot reached the correct position to move the cube and, playing 
 
 https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/16b4ba27-fd71-4346-87d7-b9f26c1f5906
 
-### I’m not a Robotic arm
+## I’m not a Robotic arm
 I’m not a Robotic arm was more like an entertaining challenge than a learning experience because it needed technical movements that produced errors in the Inverse Kinematic solver since we had one degree of freedom less than the solver required.
 After some attempts and some approximation, we reached the goal.
 
