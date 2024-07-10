@@ -4,20 +4,17 @@
 # Robotics
 
 #### Prof.: 	Alessandro Rizzo
-#### TAs: 		David Pangcheng Cen Cheng
-####                     Andrea Usai
-
-
+#### TAs: 		David Pangcheng Cen Cheng, Andrea Usai
+----------------------
 ##### Muratore Luigi			s333098
 ##### Gennero Giorgia		s333099 
 ##### Akbarov Iskandar		s329650 
 ##### Swaidan Moussa		s334402 
 ##### Muhammad Fatir Noshab	s331898
 
-
 #### 2023/2024
 
-
+--------------------
 
 # I’m not a Robotic Arm
 We are:
