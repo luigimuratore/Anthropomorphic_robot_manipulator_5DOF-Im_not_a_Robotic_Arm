@@ -148,7 +148,6 @@ o	fkine to compute the forward kinematics
 o	others 
 to schematise the robot in a simulated environment.
 
-<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d33fc6ba-cdf6-4e45-b6f7-b525e0e66aaa">
 
 https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d33fc6ba-cdf6-4e45-b6f7-b525e0e66aaa
 
@@ -168,7 +167,8 @@ This is a specific file that describes all the properties of the robot regarding
 In particular, it contains information such as mass, origin, geometry, material, inertia, limits, and collisions.
 It is essential to handle the robot in the virtual environments to compute planning trajectory.
 
-![urdf](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a5b70806-c542-4ff2-ba2a-f22638d0c6ce)
+<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a5b70806-c542-4ff2-ba2a-f22638d0c6ce">
+
 
 ### Simscape Multibody Link
 Thanks to the Simscape Multibody Link tool on SolidWorks, we could export the XML file.
@@ -176,7 +176,7 @@ This is another useful file that allowed us to create the model on MATLAB/Simuli
 
 Setting the parameters as limits, velocities, and accelerations we could simulate our model checking that everything worked also in simulink.
 
-![xml_screenshot](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6)
+<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6">
 
 
 ### ROS
