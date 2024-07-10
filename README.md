@@ -22,6 +22,8 @@ We are:
 Luigi, Giorgia, Iskandar, Moussa, Fatir.
 We will show you the results of our robotics project we did during this semester.
 
+----------------------------------
+
 ## IDEA
 Our idea is based on a 5 degrees of freedom anthropomorphic robot manipulator. We drew inspiration from different online projects.
 
@@ -36,12 +38,22 @@ A secondary problem was that the wrist we built was not spherical.
 
 Due to these problems, we could use neither some procedures and some approximations treated during the lectures nor the analytic solution of Inverse Kinematics but the numerical one. 
 
+----------------------------------
+
 ## CAD
 Using modelling and CAD programs we moved the project to a 3Dspace, we chose SolidWorks and Fusion360 to design the robot and to set the requirements.
 We chose SolidWorks because we have the licence thanks to Politecnico and Fusion360 instead, because there is the possibility to create some animations directly inside the program, so we did some loop movements in a very easy way to better visualize our idea.
 
+![FUSION360](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/4a408277-ff97-4677-998e-b5391bf33465)
+
+------------------------------
+
 ## GOAL
 Our base goal was to use the robot as a pick and place to take an object from one position and move it to another one.
+
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/2e70519c-70a1-426c-b131-4d7889ed0b72
+
+------------------------------------------
 
 ## Bill of materials
 The robot has been totally 3D printed and built at home.
@@ -58,7 +70,6 @@ In particular, we assembled:
 • 1 Nema 17 for the fifth joint
 • 1 Servo of 20 kg for the gripper
 
-
 ### Drivers
 Each motor is controlled in power by a (tb6560) driver.
 (The driver is necessary because the stepper motor operates by accurately synchronizing with the pulse signal output from the controller to the driver itself.
@@ -70,6 +81,10 @@ The whole system is supplied by a 24V 13A power supply.
 All the drivers require 24 volts, so they are all connected in parallel to the output of the power supply. 
 The servo, instead, needs about 6 volts, and it is connected to a smaller power supply.
 The boards have a separate circuit, just to be sure to not supercharge them.
+
+![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b7ff3642-92a2-4dbf-b5d3-34c699867e2e)
+
+-------------------------------------
 
 ## Control
 We designed different control algorithms.
@@ -88,6 +103,8 @@ In this architecture, each of the 5DOF stepper motors is controlled by a dedicat
 
 Additionally, to keep the project cost-effective, we opted for a simpler control system without encoders.
 The implementation of encoders in the future could enhance the control system’s precision by providing real-time feedback on the actual joint positions, potentially enabling closed-loop control for improved accuracy.
+
+![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/685748a0-2555-464a-b329-d6948ca6eea8)
 
 ## Kinematics
 During the course, we studied direct and inverse kinematics to analyze all the main motion aspects of a robot.
@@ -134,6 +151,7 @@ This is a specific file that describes all the properties of the robot regarding
 In particular, it contains information such as mass, origin, geometry, material, inertia, limits, and collisions.
 It is essential to handle the robot in the virtual environments to compute planning trajectory.
 
+![urdf](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/a5b70806-c542-4ff2-ba2a-f22638d0c6ce)
 
 ### Simscape Multibody Link
 Thanks to the Simscape Multibody Link tool on SolidWorks, we could export the XML file.
@@ -141,9 +159,13 @@ This is another useful file that allowed us to create the model on MATLAB/Simuli
 
 Setting the parameters as limits, velocities, and accelerations we could simulate our model checking that everything worked also in simulink.
 
+![xml_screenshot](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6)
+
 
 ### ROS
 Working with ROS, we had to create a sort of network to manage to communicate and exchange data. We created a package with a subscriber that takes our input data, such as angle positions or points in the workspace, and a publisher that sends them to another node that runs the script for the robot.
+
+![ROS](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b86069da-b7ac-4341-9d24-2145e0a2b2d6)
 
 
 ### Scripts
@@ -153,6 +175,9 @@ It took into account the transmission ratio and excitation ratio.
 
 In our case, the transmission ratio goes from 1 to 6.5, while the excitation ratio is either 4 or 8 or 32. 
 The constant 1.8 is characteristic of the stepper motor, and it is essentially the angular distance the motor moves in a single step.
+
+![completeCode](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/1c9b92eb-944d-4fa4-807d-f464ba73dcc9)
+
 
 ### MoveIt
 Then with the URDF file, we could finally implement the model on MoveIt, a special tool that allows to plan trajectories and Inverse Kinematics with different types of solvers.
@@ -174,6 +199,9 @@ After choosing the solver we started working on the interface between the robot 
 Once we did that, we executed the planning computed by the solver, and we obtained the Inverse Kinematics solution with all the angles related to each joint.
 
 
+https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/9106dfd2-7dc9-4f0e-8a77-2a585b057a1e
+
+-----------------------------------------------------
 
 ## Tests
 ### Pick and Place
@@ -186,6 +214,7 @@ All the other motors attained the position with an error of less than 1 mm.)
 In the end the robot reached the correct position to move the cube and, playing with Python code, we were able to move the whole system very smoothly.
 
 
+
 ### I’m not a Robotic arm
 I’m not a Robotic arm was more like an entertaining challenge than a learning experience because it needed technical movements that produced errors in the Inverse Kinematic solver since we had one degree of freedom less than the solver required.
 After some attempts and some approximation, we reached the goal.
@@ -194,6 +223,8 @@ In this case we had the most problems.
 As we can see in the video, we could not do a single transition movement from the first position to the second one, so it took three more, and it seems not very smooth, because the Python scripts produced a lot of errors, and we are still checking why.
 
 Other than that, the Inverse Kinematic solution was correct, and all the positions were reached successfully.
+
+-------------------------------------------------
 
 ## Future upgrades
 Looking at the future, we have a lot of upgrades or implementations in mind.
@@ -233,3 +264,8 @@ The last two could be merged, so the last step would be to combine code generato
 The last upgrade we tough is to combine this project with another project we are working on, which is based on Electromyography (EMG).
 Electromyography, in fact, is exactly the technique for evaluating and recording the electrical activity produced by skeletal muscles, we use it to read signals from the muscles and process them to perform predefined tasks.
 It could be very interesting to try to combine these two projects to achieve a remote control of the robot arm using electrodes placed on a human body.
+
+![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/361bf8ad-98e1-4fd1-b121-80568bf2eba0)
+
+-----------------------------------------
+
