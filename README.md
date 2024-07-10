@@ -1,5 +1,6 @@
-## POLITECNICO DI TORINO
-#### Master Degree in Mechatronic Engineer
+![politoLogo](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/c104c1e7-fe39-4fee-b0c7-95fbba004564)
+
+# Master Degree in Mechatronic Engineer
 
 # Robotics
 
