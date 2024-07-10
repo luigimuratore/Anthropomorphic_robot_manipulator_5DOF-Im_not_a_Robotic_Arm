@@ -6,6 +6,8 @@
 
 # Robotics
 
+</div>
+
 #### Prof.: 	Alessandro Rizzo
 #### TAs: 		David Pangcheng Cen Cheng, Andrea Usai
 ----------------------
@@ -17,7 +19,7 @@
 
 #### 2023/2024
 
-</div>
+
 --------------------
 
 # I’m not a Robotic Arm
