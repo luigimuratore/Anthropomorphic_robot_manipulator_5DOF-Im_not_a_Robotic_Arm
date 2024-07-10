@@ -45,9 +45,8 @@ Due to these problems, we could use neither some procedures and some approximati
 Using modelling and CAD programs we moved the project to a 3Dspace, we chose SolidWorks and Fusion360 to design the robot and to set the requirements.
 We chose SolidWorks because we have the licence thanks to Politecnico and Fusion360 instead, because there is the possibility to create some animations directly inside the program, so we did some loop movements in a very easy way to better visualize our idea.
 
-<div style="text-align: center">
-  <img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robic_Arm/assets/126814136/4a408277-ff97-4677-998e-b5391bf33465" width="500" />
-</div>
+<img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robic_Arm/assets/126814136/4a408277-ff97-4677-998e-b5391bf33465" width="500" />
+
 
 ------------------------------
 
