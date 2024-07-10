@@ -176,7 +176,7 @@ This is another useful file that allowed us to create the model on MATLAB/Simuli
 
 Setting the parameters as limits, velocities, and accelerations we could simulate our model checking that everything worked also in simulink.
 
-<img width="700" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6">
+<img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/b65df7a1-e9b6-471a-94cc-4ac128d7f9c6">
 
 
 ### ROS
@@ -288,7 +288,8 @@ The last upgrade we tough is to combine this project with another project we are
 Electromyography, in fact, is exactly the technique for evaluating and recording the electrical activity produced by skeletal muscles, we use it to read signals from the muscles and process them to perform predefined tasks.
 It could be very interesting to try to combine these two projects to achieve a remote control of the robot arm using electrodes placed on a human body.
 
-![immagine](https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/361bf8ad-98e1-4fd1-b121-80568bf2eba0)
+<img width="900" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/361bf8ad-98e1-4fd1-b121-80568bf2eba0">
+
 
 -----------------------------------------
 
