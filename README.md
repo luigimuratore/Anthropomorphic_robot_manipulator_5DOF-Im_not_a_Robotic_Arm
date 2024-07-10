@@ -1,27 +1,27 @@
-# POLITECNICO DI TORINO
-### Master Degree in Mechatronic Engineer
+## POLITECNICO DI TORINO
+#### Master Degree in Mechatronic Engineer
 
-## Robotics
+# Robotics
 
-Prof.: 	Alessandro Rizzo
-TAs: 		David Pangcheng Cen Cheng
+### Prof.: 	Alessandro Rizzo
+### TAs: 		David Pangcheng Cen Cheng
         Andrea Usai
 
 
-I’m not a Robotic Arm
+# I’m not a Robotic Arm
 
-Muratore Luigi			s333098
-Gennero Giorgia		s333099 
-Akbarov Iskandar		s329650 
-Swaidan Moussa		s334402 
-Muhammad Fatir Noshab	s331898
-
-
-2023/2024
+#### Muratore Luigi			s333098
+#### Gennero Giorgia		s333099 
+#### Akbarov Iskandar		s329650 
+#### Swaidan Moussa		s334402 
+#### Muhammad Fatir Noshab	s331898
 
 
+#### 2023/2024
 
-I’m not a Robotic Arm
+
+
+# I’m not a Robotic Arm
 we are:
 Luigi, Giorgia, Iskandar, Moussa, Fatir.
 We will show you the results of our robotics project we did during this semester.
