@@ -36,8 +36,8 @@ Since we did the design part before the main concepts of the robotics course, we
 So, for example, we chose 5 DOF even if, during the course, we figured out that the best solution would have been 6 DOF.
 
 This is because a robotic arm with 5 degrees of freedom has some limitations, such as:
-• Limited dexterity
-• Less versatility
+#### • Limited dexterity
+#### • Less versatility
 
 A secondary problem was that the wrist we built was not spherical.
 
@@ -49,7 +49,10 @@ Due to these problems, we could use neither some procedures and some approximati
 Using modelling and CAD programs we moved the project to a 3Dspace, we chose SolidWorks and Fusion360 to design the robot and to set the requirements.
 We chose SolidWorks because we have the licence thanks to Politecnico and Fusion360 instead, because there is the possibility to create some animations directly inside the program, so we did some loop movements in a very easy way to better visualize our idea.
 
-<img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/4a408277-ff97-4677-998e-b5391bf33465" width="500" />
+<div align="center">
+  <img src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/4a408277-ff97-4677-998e-b5391bf33465" width="500" />
+</div>
+
 
 
 
@@ -66,9 +69,13 @@ https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a
 The robot has been totally 3D printed and built at home.
 In order to complete the 3d printing part we used just over 4 kg of plastic, and it took about 250 hours overall. (including problems and faulty print that needed to be printed again)
 
-<img width="800" alt="print" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/5b0815d6-134c-44f5-bfb3-7041eb927fa1">
 
-<img width="500" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d4e30a13-b516-45d8-8a91-e5177a7d934c">
+<div align="center">
+  <img width="800" alt="print" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/5b0815d6-134c-44f5-bfb3-7041eb927fa1">
+
+  <img width="500" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d4e30a13-b516-45d8-8a91-e5177a7d934c">
+</div>
+
 
 
 ### Motors
