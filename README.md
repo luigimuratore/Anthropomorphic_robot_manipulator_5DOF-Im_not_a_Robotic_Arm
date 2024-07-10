@@ -63,7 +63,7 @@ In order to complete the 3d printing part we used just over 4 kg of plastic, and
 
 <img width="800" alt="print" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/5b0815d6-134c-44f5-bfb3-7041eb927fa1">
 
-<img width="800" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d4e30a13-b516-45d8-8a91-e5177a7d934c">
+<img width="500" src="https://github.com/luigimuratore/Anthropomorphic_robot_manipulator_5DOF-Im_not_a_Robotic_Arm/assets/126814136/d4e30a13-b516-45d8-8a91-e5177a7d934c">
 
 
 ### Motors
